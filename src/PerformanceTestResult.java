@@ -31,5 +31,11 @@ public class PerformanceTestResult {
 	public long getTotalTime() {
 		return totalTime;
 	}
-	
+
+    @Override
+    public String toString() {
+        return "The longest single execution took:" + getMaxTime() + "\n"
+                + "The shortest single execution took:" + getMinTime() + "\n"
+                + "The whole performance test took in total:" + getTotalTime() + "\n";
+    }
 }
